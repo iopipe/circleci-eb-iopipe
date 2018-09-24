@@ -11,5 +11,5 @@ RUN set -x
 RUN set -e
 
 RUN sudo mkdir -p /home/ubuntu/.aws
-RUN touch /home/ubuntu/.aws/config
-RUN chmod 600 /home/ubuntu/.aws/config
+RUN sudo touch /home/ubuntu/.aws/config
+RUN sudo chmod 600 /home/ubuntu/.aws/config
