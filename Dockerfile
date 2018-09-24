@@ -12,7 +12,7 @@ RUN set -e
 
 RUN sudo mkdir -p /home/ubuntu/.aws
 RUN touch /home/ubuntu/.aws/config
-RUNchmod 600 /home/ubuntu/.aws/config
+RUN chmod 600 /home/ubuntu/.aws/config
 RUN echo "[profile eb-cli]" > /home/ubuntu/.aws/config
 RUN echo "aws_access_key_id=$AWS_ACCESS_KEY_ID" >> /home/ubuntu/.aws/config
 RUN echo "aws_secret_access_key=$AWS_SECRET_ACCESS_KEY" >> /home/ubuntu/.aws/config
